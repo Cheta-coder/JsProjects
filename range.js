@@ -30,8 +30,8 @@ let checkValue = () => {
     paragragh.innerHTML = range.value;
     rangeValue = range.value;
 
-    range.value = number.value
-    number.value = range.value
+    // range.value = number.value
+    // number.value = range.value
     
     try{
         // Here you try a block of code
