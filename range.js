@@ -22,15 +22,16 @@ paragragh.innerHTML = range.value;
 
 //     e.preventDefault()
 // })
-range.value = number.value
+// range.value = number.value
 
 
 
 let checkValue = () => {
     paragragh.innerHTML = range.value;
     rangeValue = range.value;
-    
-    number.innerHTML = range.value
+
+    range.value = number.value
+    number.value = range.value
     
     try{
         // Here you try a block of code
@@ -59,6 +60,5 @@ button.addEventListener('click', (e) =>{
 })
 button2.addEventListener('click', (e) =>{
     number.value = range.value
-
     e.preventDefault()
 })
