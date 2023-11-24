@@ -6,13 +6,19 @@
     <title>Document</title>
 
     <style>
+        body{
+            padding: auto;;
+        }
         input{
-            width: 40%;
+            display: block;
             padding: auto;
             box-shadow: 2px 1px 2px rgb(145, 145, 240);
         }
         form{
+            padding: 15%;
             margin-left: 10%;
+            background-color: plum;
+            
         }
         button{
             display: block;
@@ -25,9 +31,14 @@
     <p class="p"></p>
 
     <form>
+        <label for="courses">Course Name</label>
         <input class="courses" type="text" placeholder="CourseName">
+        <label for="courses">Course Price</label>
         <input class="courses" type="number"placeholder="coursePrice">
+        <label for="courses">Course Duration</label>
         <input class="courses" type="text" placeholder="courseDuration">
+        
+        <label for="courses">Course Instructor</label>
         <input class="courses" type="text" placeholder="Instructor">
         <button>Submit</button>
     </form>
