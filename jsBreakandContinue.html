@@ -15,15 +15,30 @@
             box-shadow: 2px 1px 2px rgb(145, 145, 240);
         }
         form{
-            padding: 15%;
-            margin-left: 10%;
+            padding: 20%;
             background-color: plum;
             
         }
         button{
             display: block;
-            margin: 10% 0 0 40%;
+            margin: 10% 0 0 25%;
     
+        }
+        @media screen and (min-width: 480px){
+            form{
+                display: grid;
+                grid-template-areas: "div1 div2";
+            }
+            .div1{
+                grid-area: div1;
+            }
+            .div2{
+                grid-area: div2;
+            }
+            button{
+                margin-left: 40%;
+                margin-right: -19%;
+            }
         }
     </style>
 </head>
@@ -31,15 +46,22 @@
     <p class="p"></p>
 
     <form>
-        <label for="courses">Course Name</label>
-        <input class="courses" type="text" placeholder="CourseName">
-        <label for="courses">Course Price</label>
-        <input class="courses" type="number"placeholder="coursePrice">
-        <label for="courses">Course Duration</label>
-        <input class="courses" type="text" placeholder="courseDuration">
-        
-        <label for="courses">Course Instructor</label>
-        <input class="courses" type="text" placeholder="Instructor">
+        <div class="div1">
+            <label for="courses">Course Name</label>
+            <input class="courses" type="text" placeholder="CourseName">
+        </div>
+        <div class="div2">
+            <label for="courses">Course Price</label>
+            <input class="courses" type="number"placeholder="coursePrice">
+        </div>
+        <div>
+            <label for="courses">Course Duration</label>
+            <input class="courses" type="text" placeholder="courseDuration">
+        </div>
+        <div>
+            <label for="courses">Course Instructor</label>
+            <input class="courses" type="text" placeholder="Instructor">
+        </div>
         <button>Submit</button>
     </form>
     <a href="range.html">Click here to see range.html</a>
