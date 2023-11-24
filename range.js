@@ -62,3 +62,9 @@ button2.addEventListener('click', (e) =>{
     number.value = range.value
     e.preventDefault()
 })
+range.addEventListener('mouseup', ()=>{
+    number.value = range.value
+})
+number.addEventListener('mouseup', ()=>{
+    range.value = number.value
+})
