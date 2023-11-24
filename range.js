@@ -52,19 +52,20 @@ let checkValue = () => {
 
 range.addEventListener('change', checkValue)
 
-button.addEventListener('click', (e) =>{
+// button.addEventListener('click', (e) =>{
+//     range.value = number.value
+//     paragragh.innerHTML = range.value;
+    
+//     e.preventDefault()
+// })
+// button2.addEventListener('click', (e) =>{
+//     number.value = range.value
+//     e.preventDefault()
+// })
+range.addEventListener('change', ()=>{
+    number.value = range.value
+})
+number.addEventListener('keyup', ()=>{
     range.value = number.value
     paragragh.innerHTML = range.value;
-    
-    e.preventDefault()
-})
-button2.addEventListener('click', (e) =>{
-    number.value = range.value
-    e.preventDefault()
-})
-range.addEventListener('mouseup', ()=>{
-    number.value = range.value
-})
-number.addEventListener('mouseup', ()=>{
-    range.value = number.value
 })
