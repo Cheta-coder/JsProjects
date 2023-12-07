@@ -1,4 +1,4 @@
 # JsProjects
-This reprository contains many html files
+This reprository contains my class constructor project
 
 https://cheta-coder.github.io/JsProjects/
