@@ -55,7 +55,6 @@ submit.addEventListener('click', (e) => {
     data.forEach((datum) => {
         dataCollect = [...dataCollect, datum.value]
     })
-    console.log(dataCollect)
     let course = new courses(dataCollect[0],dataCollect[1],dataCollect[2],dataCollect[3])
     console.log(course.courseDetails())
     populate()
